@@ -1,0 +1,26 @@
+{
+  "id": "codex-zh-i18n",
+  "name": "Codex 中文界面 i18n（codex-zh for Codex++）",
+  "description": "强制 Codex 桌面端界面为中文 (zh-CN)：patch Statsig 的 i18n 开关（gate 72216192，强制 enable_i18n）并覆盖系统语言。与模型中转/路由功能并存，无需再装单独汉化工具。派生自 shibaweidu/codex-desktop-zh（MIT）。",
+  "version": "1.0.0",
+  "author": "zhudong1314",
+  "tags": [
+    "codex",
+    "i18n",
+    "chinese",
+    "locale",
+    "ui"
+  ],
+  "homepage": "https://github.com/zhudong1314/codex-zh-i18n",
+  "script_url": "https://raw.githubusercontent.com/BigPizzaV3/CodexPlusPlusScriptMarket/main/scripts/codex-zh-i18n.js",
+  "sha256": "6F42597432340148AC9F659BE93B12AEAC8652BF388051F7EB1DCA65CCA12749",
+  "requirements": [
+    "BigPizzaV3 CodexPlusPlus 用户脚本环境（Windows x64 / macOS arm64 或 x64）"
+  ],
+  "limitations": [
+    "仅经 Codex++ 启动 Codex 时生效",
+    "Statsig gate 号 72216192 为硬编码，Codex 官方更新后可能失效（与上游 codex-desktop-zh 相同限制）",
+    "一键安装包仅 Windows；macOS 需手动将脚本放入 ~/.config/Codex++/user_scripts/（见 README「手动安装」）",
+    "建议将 Codex++ 配置 settings.json 中 codexAppForceChineseLocale 设为 false，避免与内建强制中文冲突"
+  ]
+}
